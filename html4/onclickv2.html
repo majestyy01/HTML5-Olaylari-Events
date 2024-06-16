@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Click v2</title>
+    <script>//Bu kodda bir öncekinden farklı olarak, belge nesnesinin addEventListener metodu kullanılmıştır
+    document.addEventListener('click',KOPYA,false)
+        function KOPYA(e){   
+            document.getElementById("alan2").value=document.getElementById("alan1").value;
+            document.getElementById("alan3").value=document.getElementById("alan1").value;
+        }
+    </script>
+</head>
+<body>
+    1.ALAN : <input type="text" id="alan1" value="Güzel Yurdum Türkiye..."><br>
+    2.ALAN : <input type="text" id="alan2">
+    3.ALAN : <input type="text" id="alan3">
+    <button onclick="KOPYA()">Metni Kopyala</button>
+
+    <p>Düğmeye Tıklandığı Zaman 1.Alandan 2 ve 3. Alana Kopyalama İşlemi Yapılıyor.</p>
+</body>
+</html>
